@@ -1,12 +1,15 @@
+import './globals.css'
+
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
-import './globals.css'
+
+import NavBar from '@/components/NavBar/NavBar'
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['700'] })
 
 export const metadata: Metadata = {
   title: 'Nano Service',
-  description: 'Assitência Tecnica Especializada Multimarcas de Manaus',
+  description: 'Serviço Técnico Especializado Multimarca de Manaus',
 }
 
 export default function RootLayout({
@@ -16,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }

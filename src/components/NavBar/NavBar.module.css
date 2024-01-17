@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 170px;
+  width: 100vw;
+  background-color: var(--background-color);
+}
+
+.navList {
+  height: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  min-width: 100%;
+  color: #fff;
+  font-size: 24px;
+}
+
+.contactList {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  cursor: default;
+  gap: 70px;
+  font-size: 20px;
+}
+
+.contactList img {
+  cursor: pointer;
+}
+
+.pagesList {
+  display: flex;
+  width: 414px;
+  justify-content: space-between;
+}
+
+.subNav {
+  height: 50px;
+  background-color: var(--main-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-black);
+  font-size: 24px;
+  gap: 10px;
+}
