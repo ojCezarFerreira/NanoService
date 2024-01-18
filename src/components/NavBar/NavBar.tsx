@@ -30,5 +30,6 @@ export default function NavBar() {
         Atendemos toda Manaus <Image src="/images/svg/deliveryTruck.svg" alt="Caminhão de delivery" width={33} height={25} />
       </div>
     </nav>
+    {/*Implementar versão mobile*/}
   </>
 }

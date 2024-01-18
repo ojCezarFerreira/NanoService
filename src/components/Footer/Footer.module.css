@@ -1,0 +1,32 @@
+.footer {
+  width: 100vw;
+  height: 550px;
+  background-color: var(--main-black);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+}
+
+.contactSection {
+  text-align: center;
+}
+
+.contactSection h2 {
+  margin-bottom: 68px;
+  font-size: 40px;
+}
+
+.contactMeans {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+.socialMedias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
