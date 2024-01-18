@@ -1,16 +1,37 @@
+"use client";
+
 import Image from 'next/image'
 import styles from './NavBar.module.css'
 import Link from 'next/link'
+import { linkTelegram, linkWpp } from '@/utils/links'
+import { useState } from 'react';
 
 export default function NavBar() {
+  const [menuMobileIsActive, setMenuMobileIsActive] = useState(false)
+
+  function menuMobileAction() {
+    if (menuMobileIsActive) {
+      setMenuMobileIsActive(false)
+    } else {
+      setMenuMobileIsActive(true)
+    }
+  }
+
   return <>
     <nav className={styles.nav}>
-      <div className={styles.navList}>
+      <div className={menuMobileIsActive ? styles.navListActive : styles.navList}>
         <ul className={styles.contactList}>
-          <li>Faça seu pré-orçamento <br />GRÁTIS aqui!</li>
-          {/* Adicionar links aos botões */}
-          <li><Image src="/images/icon-whatsapp.png" alt="icone whatsapp" width={70} height={70} quality={100} /></li>
-          <li><Image src="/images/icon-telegram.png" alt="icone telegram" width={70} height={70} quality={100} /></li>
+          <li><span>Faça seu pré-orçamento <br />GRÁTIS aqui!</span></li>
+          <li>
+            <Link href={linkWpp} target='_blank'>
+              <Image src="/images/icon-whatsapp.png" alt="icone whatsapp" width={70} height={70} quality={100} />
+            </Link>
+          </li>
+          <li>
+            <Link href={linkTelegram} target='_blank'>
+              <Image src="/images/icon-telegram.png" alt="icone telegram" width={70} height={70} quality={100} />
+            </Link>
+          </li>
         </ul>
 
         <Image
@@ -19,12 +40,33 @@ export default function NavBar() {
           width={142}
           height={120}
           quality={100}
+          className={styles.logoDesk}
         />
-
         <ul className={styles.pagesList}>
           <li><Link href="#">Leva e Traz</Link></li>
           <li><Link href="#">Quem Somos?</Link></li>
         </ul>
+      </div>
+
+      <div className={menuMobileIsActive ? styles.navListMobileWithMenuActive : styles.navListMobile}>
+        <Image
+          src="/images/nanoservice-clean-logo.png"
+          alt="nanoservice logo"
+          width={70}
+          height={80}
+          quality={100}
+          className={styles.logoMobile}
+        />
+
+        <Link href={linkWpp} target='_blank'>
+          <Image src="/images/icon-whatsapp.png" alt="icone whatsapp" width={40} height={40} quality={100} />
+        </Link>
+
+        <Link href={linkTelegram} target='_blank'>
+          <Image src="/images/icon-telegram.png" alt="icone telegram" width={40} height={40} quality={100} />
+        </Link>
+
+        <button className={menuMobileIsActive ? styles.hamburguerActive : styles.hamburguer} onClick={menuMobileAction}></button>
       </div>
       <div className={styles.subNav}>
         Atendemos toda Manaus <Image src="/images/svg/deliveryTruck.svg" alt="Caminhão de delivery" width={33} height={25} />
