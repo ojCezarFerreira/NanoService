@@ -43,7 +43,7 @@
   height: 50vh;
   background: var(--main-black);
   right: 0;
-  animation: menuIn 1s;
+  animation: menuIn 500ms ease;
 }
 
 
@@ -201,7 +201,8 @@
 
   .pagesList a::after {
     content: "→";
-    margin-left: 5px;
+    font-size: 40px;
+    margin-left: 3px;
   }
 
   .subNav {
