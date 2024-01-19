@@ -3,8 +3,6 @@
 import Carousel from "react-multi-carousel"
 import 'react-multi-carousel/lib/styles.css'
 
-import styles from './BrandCarousel.module.css'
-
 import brands from "@/data/brandsImages";
 import Image from "next/image";
 
@@ -54,7 +52,6 @@ export default function BrandCarousel() {
     autoPlaySpeed={1500}
     customTransition="500ms ease-in-out"
     keyBoardControl={false}
-    containerClass={styles.carousel}
     removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
     itemClass="carousel-item-padding-40-px"
   >

@@ -44,9 +44,17 @@ export default function Home() {
           {renderServices()}
         </div>
       </section>
+
       <section className={styles.brands}>
         <h2>Marcas</h2>
         <BrandCarousel />
+      </section>
+
+      <section className={styles.aboutUs}>
+        <div className={styles.aboutBanner}></div>
+        <div className={styles.aboutMission}></div>
+        <div className={styles.aboutVision}></div>
+        <div className={styles.aboutValues}></div>
       </section>
     </main>
   )

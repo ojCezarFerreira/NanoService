@@ -16,6 +16,7 @@ import samsung from '../../public/images/brands/samsung.svg'
 import sony from '../../public/images/brands/sony.png'
 import vaio from '../../public/images/brands/vaio.svg'
 import xiaomi from '../../public/images/brands/xiaomi.svg'
+import apple from '../../public/images/brands/logo-apple.svg'
 
 interface brandImage {
   brand: StaticImageData
@@ -38,7 +39,8 @@ const brands: brandImage[] = [
   { brand: samsung, alt: 'Samsung logo' },
   { brand: sony, alt: 'Sony logo' },
   { brand: vaio, alt: 'Vaio logo' },
-  { brand: xiaomi, alt: 'Xiaomi logo' }
+  { brand: xiaomi, alt: 'Xiaomi logo' },
+  { brand: apple, alt: 'Apple logo' },
 ]
 
 export default brands
