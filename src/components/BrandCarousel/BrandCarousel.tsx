@@ -27,10 +27,13 @@ export default function BrandCarousel() {
   };
 
   function renderBrands() {
-    const screenWidth = screen.width
+    let screenWidth = 1024
+    if (typeof window !== 'undefined') {
+      screenWidth = screen.width
+    }
 
-    return brands.map((brand, i) => {
-      return <div key={i}>
+    return brands.map(brand => {
+      return <div key={brand.id}>
         <Image
           src={brand.brand}
           alt={brand.alt}

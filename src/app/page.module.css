@@ -56,12 +56,45 @@
 }
 
 .aboutUs {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "banner banner banner"
+    "mission vision values";
   max-width: 100vw;
   height: 100vh;
   background: var(--main-black);
+}
+
+.aboutUs div {
+  max-width: 100vw;
+}
+
+.aboutBanner {
+  grid-area: banner;
+  width: 100vw;
+  background-color: black;
+}
+
+.aboutMission {
+  grid-area: mission;
+  height: 100%;
+  background-color: var(--main-orange);
+  opacity: 70%;
+}
+
+.aboutVision {
+  grid-area: vision;
+  height: 100%;
+  background-color: var(--main-red);
+  opacity: 70%;
+}
+
+.aboutValues {
+  grid-area: values;
+  height: 100%;
+  background-color: var(--main-green);
+  opacity: 70%;
 }
 
 @media (max-width: 1400px) {
