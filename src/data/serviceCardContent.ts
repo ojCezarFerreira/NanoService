@@ -13,7 +13,7 @@ interface serviceCardData {
   content: string[]
 }
 
-const serviceCardData: serviceCardData[] = [
+const serviceCardDataArray: serviceCardData[] = [
   {
     title: "Reparos em Tablet e Smartphone",
     image: iphoneQuebrado,
@@ -55,12 +55,13 @@ const serviceCardData: serviceCardData[] = [
     image: placaEletronica,
     contentIcon: iconCheck,
     content: [
-      "Não puxa papel",
-      "Impressão com falhas",
-      "Impressão em branco",
-      "Não liga",
+      "Televisor",
+      "Video Game",
+      "Controle",
+      "Projetor",
+      "Cafeteira",
     ],
   },
 ]
 
-export default serviceCardData
+export default serviceCardDataArray
