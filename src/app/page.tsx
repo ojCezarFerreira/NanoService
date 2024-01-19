@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 import banner from '../../public/images/banner-principal-assistencia-tecnica-manaus.png'
+import iconCheck from '../../public/images/icon-check.png'
 import ServiceCard from '@/components/ServiceCard/ServiceCard'
 import serviceCardDataArray from '@/data/serviceCardContent'
 import BrandCarousel from '@/components/BrandCarousel/BrandCarousel'
@@ -9,7 +10,19 @@ import BrandCarousel from '@/components/BrandCarousel/BrandCarousel'
 export default function Home() {
   function renderServices() {
     return serviceCardDataArray.map((service, i) => {
-      return <ServiceCard key={i} background={service.image} title={service.title} contentIcon={service.contentIcon} content={service.content} />
+      return <>
+        <ServiceCard key={i} background={service.image} title={service.title} contentIcon={service.contentIcon} content={service.content} />
+        <span className={styles.servicesWarning}>
+          Temos a Solução
+          <Image
+            src={iconCheck}
+            alt="Check"
+            width={30}
+            height={30}
+          />
+        </span>
+      </>
+
     })
   }
 
@@ -27,7 +40,7 @@ export default function Home() {
 
       <section className={styles.services}>
         <h2>Serviços</h2>
-        <div className={styles.cards}>
+        <div className={styles.servicesCards}>
           {renderServices()}
         </div>
       </section>
