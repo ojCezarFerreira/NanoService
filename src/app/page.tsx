@@ -2,6 +2,8 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 import banner from '../../public/images/banner-principal-assistencia-tecnica-manaus.png'
+import iphoneQuebrado from '../../public/images/iphone-quebrado.png'
+import ServiceCard from '@/components/ServiceCard/ServiceCard'
 
 export default function Home() {
   return (
@@ -14,6 +16,10 @@ export default function Home() {
           quality={100}
           placeholder='blur'
         />
+      </section>
+      <section className={styles.services}>
+        <h2>Serviços</h2>
+        <ServiceCard background={iphoneQuebrado} />
       </section>
     </main>
   )

@@ -8,11 +8,26 @@
   height: 550px;
 }
 
-
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: #fff;
+  font-size: 36px;
+  gap: 50px;
+  padding: 50px;
+}
 
 
 @media (max-width: 1200px) {
   .banner {
     height: 147px;
+  }
+
+  .services {
+    font-size: 24px;
+
   }
 }
