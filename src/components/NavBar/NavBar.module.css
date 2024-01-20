@@ -131,7 +131,8 @@
   margin-top: 5px;
   position: relative;
   transition: 0.3s;
-  transform: rotate(135deg)
+  transform: rotate(135deg);
+  cursor: pointer;
 }
 
 .hamburguerActive::after {
@@ -145,6 +146,7 @@
   transition: 0.3s;
   transform: rotate(-135deg);
   top: -7px;
+  cursor: pointer;
 }
 
 .subNav {

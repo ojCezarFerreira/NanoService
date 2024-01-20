@@ -13,7 +13,7 @@ export default function NavBar() {
 
   function menuMobileAction() {
     if (typeof window !== 'undefined') {
-      if (screen.width > 1200) return
+      if (window.innerWidth > 1200) return
     }
 
     if (menuMobileIsActive) {
