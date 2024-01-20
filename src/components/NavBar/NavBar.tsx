@@ -51,15 +51,7 @@ export default function NavBar() {
           />
         </Link>
         <ul className={styles.pagesList}>
-          <li><Link href="/leva-e-traz" onClick={menuMobileAction} id={styles.levaETraz}>
-            Leva e Traz
-            <Image
-              src={foguete}
-              alt="foguete"
-              width={30}
-              height={30}
-            />
-          </Link></li>
+          <li><Link href="/leva-e-traz" onClick={menuMobileAction}>Leva e Traz</Link></li>
           <li><Link href="/#quemSomos" onClick={menuMobileAction}>Quem Somos?</Link></li>
         </ul>
       </div>

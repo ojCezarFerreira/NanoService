@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import banner from '../../public/images/banner-principal-assistencia-tecnica-manaus.png'
+import banner from '../../public/images/banner-principal-assistencia-tecnica-manaus.jpg'
 import iconCheck from '../../public/images/icon-check.png'
 import ServiceCard from '@/components/ServiceCard/ServiceCard'
 import serviceCardDataArray from '@/data/serviceCardContent'
