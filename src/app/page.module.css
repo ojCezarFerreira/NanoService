@@ -58,43 +58,72 @@
 .aboutUs {
   position: relative;
   display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 33vw 33vw 33vw;
   grid-template-areas:
     "banner banner banner"
-    "mission vision values";
+    "mission vision values"
+  ;
   max-width: 100vw;
-  height: 100vh;
   background: var(--main-black);
-}
-
-.aboutUs div {
-  max-width: 100vw;
+  justify-content: center;
 }
 
 .aboutBanner {
+  display: flex;
   grid-area: banner;
-  width: 100vw;
-  background-color: black;
+  position: relative;
+  height: 310px;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutBanner h2 {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 52px;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  height: 600px;
+  color: #fff;
+  position: relative;
+
+}
+
+.aboutContent h3 {
+  color: #fff;
+  font-size: 32px;
+  margin-top: 18px;
+}
+
+
+.aboutContent p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
 }
 
 .aboutMission {
   grid-area: mission;
-  height: 100%;
-  background-color: var(--main-orange);
-  opacity: 70%;
+  background-color: var(--main-orange-70opacity);
 }
 
 .aboutVision {
   grid-area: vision;
-  height: 100%;
-  background-color: var(--main-red);
-  opacity: 70%;
+  background-color: var(--main-red-70opacity);
 }
 
 .aboutValues {
   grid-area: values;
-  height: 100%;
-  background-color: var(--main-green);
-  opacity: 70%;
+  background-color: var(--main-green-70opacity);
 }
 
 @media (max-width: 1400px) {
@@ -121,6 +150,44 @@
   .banner {
     height: 300px;
   }
+
+  .aboutUs {
+    grid-template-columns: 100vw;
+    grid-template-areas:
+      "banner"
+      "mission"
+      "vision"
+      "values"
+    ;
+  }
+
+  .aboutBanner {
+    height: 120px;
+  }
+
+  .aboutBanner h2 {
+    font-size: 32px;
+  }
+
+  .aboutBanner h2 img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .aboutContent {
+    height: 280px;
+  }
+
+  .aboutContent h3 {
+    font-size: 28px;
+  }
+
+
+  .aboutContent p {
+    font-size: 20px;
+  }
+
+
 }
 
 @media (max-width: 650px) {

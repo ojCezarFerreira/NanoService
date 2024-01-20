@@ -6,6 +6,8 @@ import iconCheck from '../../public/images/icon-check.png'
 import ServiceCard from '@/components/ServiceCard/ServiceCard'
 import serviceCardDataArray from '@/data/serviceCardContent'
 import BrandCarousel from '@/components/BrandCarousel/BrandCarousel'
+import aboutUsBanner from '../../public/images/banner-quem-somos.png'
+import nanoLogoClean from '../../public/images/nanoservice-clean-logo.png'
 
 export default function Home() {
   function renderServices() {
@@ -51,10 +53,44 @@ export default function Home() {
       </section>
 
       <section className={styles.aboutUs}>
-        <div className={styles.aboutBanner}></div>
-        <div className={styles.aboutMission}></div>
-        <div className={styles.aboutVision}></div>
-        <div className={styles.aboutValues}></div>
+        <div className={styles.aboutBanner}>
+          <Image
+            src={aboutUsBanner}
+            alt='Quem somos?'
+            fill={true}
+            placeholder='blur'
+            style={{ opacity: "70%" }}
+          />
+          <h2>
+            <Image
+              src={nanoLogoClean}
+              alt="Nano Service Logo"
+              width={150}
+              height={150}
+              placeholder='blur'
+            />
+            Quem Somos?
+          </h2>
+        </div>
+        <div className={`${styles.aboutContent} ${styles.aboutMission}`}>
+          <h3>Missão</h3>
+          <p>
+            Atender as mais diversas necessidades de reparo em equipamentos eletrônicos.
+          </p>
+        </div>
+        <div className={`${styles.aboutContent} ${styles.aboutVision}`}>
+          <h3>Visão</h3>
+          <p>
+            Em um universo cada vez mais tecnológico e dinâmico, otimizamos o tempo de nossos
+            clientes que buscam diagnostico e reparo de qualidade para seus equipamentos no conforto da sua residência
+          </p>
+        </div>
+        <div className={`${styles.aboutContent} ${styles.aboutValues}`}>
+          <h3>Valores</h3>
+          <p>
+            Qualidade, Agilidade e transparência nos diagnósticos e manutenções
+          </p>
+        </div>
       </section>
     </main>
   )

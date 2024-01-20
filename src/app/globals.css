@@ -1,15 +1,22 @@
 :root {
   --background-color: #7E8AA2;
   --main-orange: #ED9B40;
+  --main-orange-70opacity: rgba(237, 155, 64, .7);
   --main-black: #1C1C1C;
   --main-red: #A40606;
+  --main-red-70opacity: rgba(164, 6, 6, .7);
   --main-green: #7CEA9C;
+  --main-green-70opacity: rgba(124, 234, 156, .7);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {

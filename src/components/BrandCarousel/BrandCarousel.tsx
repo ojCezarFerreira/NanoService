@@ -17,17 +17,17 @@ export default function BrandCarousel() {
       items: 5
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 4
+      breakpoint: { max: 1400, min: 850 },
+      items: 3
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 850, min: 0 },
       items: 2
     }
   };
 
   function renderBrands() {
-    let screenWidth = 1024
+    let screenWidth = 1400
     if (typeof window !== 'undefined') {
       screenWidth = screen.width
     }
