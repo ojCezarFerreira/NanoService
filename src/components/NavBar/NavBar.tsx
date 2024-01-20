@@ -84,7 +84,7 @@ export default function NavBar() {
           <Image src="/images/icon-telegram.png" alt="icone telegram" width={40} height={40} quality={100} />
         </Link>
 
-        <button id='botao-menu' className={menuMobileIsActive ? styles.hamburguerActive : styles.hamburguer} onClick={menuMobileAction}></button>
+        <button aria-label="botao-menu" className={menuMobileIsActive ? styles.hamburguerActive : styles.hamburguer} onClick={menuMobileAction}></button>
       </div>
       <div className={styles.subNav}>
         Atendemos toda Manaus <Image src="/images/svg/deliveryTruck.svg" alt="Caminhão de delivery" width={33} height={25} />
