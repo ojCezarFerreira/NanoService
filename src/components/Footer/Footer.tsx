@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './Footer.module.css'
 import Link from 'next/link'
-import { linkFacebook, linkInstagram, linkTelegram, linkWpp } from '@/utils/links'
+import { linkFacebook, linkInstagram, linkTelegram, linkWpp } from '@/data/links'
 
 export default function Footer() {
   return <>

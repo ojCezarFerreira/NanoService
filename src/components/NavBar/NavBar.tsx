@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import styles from './NavBar.module.css'
 import Link from 'next/link'
-import { linkTelegram, linkWpp } from '@/utils/links'
+import { linkTelegram, linkWpp } from '@/data/links'
 import { useState } from 'react';
 
 import foguete from '../../../public/images/foguete.png'
@@ -20,22 +20,6 @@ export default function NavBar() {
       setMenuMobileIsActive(false)
     } else {
       setMenuMobileIsActive(true)
-    }
-  }
-
-  function aboutUsScroll() {
-    if (typeof window !== 'undefined') {
-      if (screen.width > 1400) {
-        window.scrollTo(0, 1700)
-      } else if (screen.width > 1000) {
-        window.scrollTo(0, 3100)
-      } else if (screen.width > 800) {
-        window.scrollTo(0, 3000)
-      } else if (screen.width > 650) {
-        window.scrollTo(0, 2690)
-      } else {
-        window.scrollTo(0, 2600)
-      }
     }
   }
 
@@ -76,7 +60,7 @@ export default function NavBar() {
               height={30}
             />
           </Link></li>
-          <li><Link href="/" onClick={() => { menuMobileAction(); aboutUsScroll() }}>Quem Somos?</Link></li>
+          <li><Link href="/#quemSomos" onClick={menuMobileAction}>Quem Somos?</Link></li>
         </ul>
       </div>
 

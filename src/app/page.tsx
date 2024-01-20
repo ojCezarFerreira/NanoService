@@ -48,11 +48,11 @@ export default function Home() {
       </section>
 
       <section className={styles.brands}>
-        <h2>Marcas</h2>
+        <h2 id='quemSomos'>Marcas</h2>
         <BrandCarousel />
       </section>
 
-      <section id='quemSomos' className={styles.aboutUs}>
+      <section className={styles.aboutUs}>
         <div className={styles.aboutBanner}>
           <h2>
             <Image
