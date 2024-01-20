@@ -14,6 +14,7 @@ export default function LevaETraz() {
             src={background}
             alt="pessoa entregando uma caixa"
             fill={true}
+            placeholder='blur'
           />
         </div>
         <h1>Leva e Traz</h1>
