@@ -6,14 +6,36 @@ import Link from 'next/link'
 import { linkTelegram, linkWpp } from '@/utils/links'
 import { useState } from 'react';
 
+import foguete from '../../../public/images/foguete.png'
+
 export default function NavBar() {
   const [menuMobileIsActive, setMenuMobileIsActive] = useState(false)
 
   function menuMobileAction() {
+    if (typeof window !== 'undefined') {
+      if (screen.width > 1200) return
+    }
+
     if (menuMobileIsActive) {
       setMenuMobileIsActive(false)
     } else {
       setMenuMobileIsActive(true)
+    }
+  }
+
+  function aboutUsScroll() {
+    if (typeof window !== 'undefined') {
+      if (screen.width > 1400) {
+        window.scrollTo(0, 1700)
+      } else if (screen.width > 1000) {
+        window.scrollTo(0, 3100)
+      } else if (screen.width > 800) {
+        window.scrollTo(0, 3000)
+      } else if (screen.width > 650) {
+        window.scrollTo(0, 2690)
+      } else {
+        window.scrollTo(0, 2600)
+      }
     }
   }
 
@@ -34,35 +56,47 @@ export default function NavBar() {
           </li>
         </ul>
 
-        <Image
-          src="/images/nanoservice-logo.png"
-          alt="nanoservice logo"
-          width={142}
-          height={120}
-          quality={100}
-          className={styles.logoDesk}
-        />
+        <Link href='/' className={styles.logoDesk}>
+          <Image
+            src="/images/nanoservice-logo.png"
+            alt="nanoservice logo"
+            width={142}
+            height={120}
+            quality={100}
+
+          />
+        </Link>
         <ul className={styles.pagesList}>
-          <li><Link href="#">Leva e Traz</Link></li>
-          <li><Link href="#">Quem Somos?</Link></li>
+          <li><Link href="/leva-e-traz" onClick={menuMobileAction} id={styles.levaETraz}>
+            Leva e Traz
+            <Image
+              src={foguete}
+              alt="foguete"
+              width={30}
+              height={30}
+            />
+          </Link></li>
+          <li><Link href="/" onClick={() => { menuMobileAction(); aboutUsScroll() }}>Quem Somos?</Link></li>
         </ul>
       </div>
 
       <div className={menuMobileIsActive ? styles.navListMobileWithMenuActive : styles.navListMobile}>
-        <Image
-          src="/images/nanoservice-clean-logo.png"
-          alt="nanoservice logo"
-          width={70}
-          height={80}
-          quality={100}
-          className={styles.logoMobile}
-        />
+        <Link href='/'>
+          <Image
+            src="/images/nanoservice-clean-logo.png"
+            alt="nanoservice logo"
+            width={70}
+            height={80}
+            quality={100}
+            className={styles.logoMobile}
+          />
+        </Link>
 
-        <Link href={linkWpp} target='_blank'>
+        <Link href={linkWpp} target='_blank' className={styles.navContactButtonMobile}>
           <Image src="/images/icon-whatsapp.png" alt="icone whatsapp" width={40} height={40} quality={100} />
         </Link>
 
-        <Link href={linkTelegram} target='_blank'>
+        <Link href={linkTelegram} target='_blank' className={styles.navContactButtonMobile}>
           <Image src="/images/icon-telegram.png" alt="icone telegram" width={40} height={40} quality={100} />
         </Link>
 
@@ -72,6 +106,5 @@ export default function NavBar() {
         Atendemos toda Manaus <Image src="/images/svg/deliveryTruck.svg" alt="Caminhão de delivery" width={33} height={25} />
       </div>
     </nav>
-    {/*Implementar versão mobile*/}
   </>
 }

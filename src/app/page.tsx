@@ -52,15 +52,8 @@ export default function Home() {
         <BrandCarousel />
       </section>
 
-      <section className={styles.aboutUs}>
+      <section id='quemSomos' className={styles.aboutUs}>
         <div className={styles.aboutBanner}>
-          <Image
-            src={aboutUsBanner}
-            alt='Quem somos?'
-            fill={true}
-            placeholder='blur'
-            style={{ opacity: "70%" }}
-          />
           <h2>
             <Image
               src={nanoLogoClean}
@@ -71,6 +64,14 @@ export default function Home() {
             />
             Quem Somos?
           </h2>
+          <p>A primeira assintência técnica 100% online</p>
+          <Image
+            src={aboutUsBanner}
+            alt='Quem somos?'
+            fill={true}
+            placeholder='blur'
+            style={{ opacity: "70%", zIndex: "-1" }}
+          />
         </div>
         <div className={`${styles.aboutContent} ${styles.aboutMission}`}>
           <h3>Missão</h3>

@@ -1,8 +1,10 @@
 .main {
   max-width: 100vw;
+  top: 170px;
 }
 
 .banner {
+  display: block;
   position: relative;
   max-width: 100vw;
   height: 550px;
@@ -67,10 +69,16 @@
   max-width: 100vw;
   background: var(--main-black);
   justify-content: center;
+  z-index: -2;
+}
+
+.aboutUs:target {
+  margin-top: 170px;
 }
 
 .aboutBanner {
   display: flex;
+  flex-direction: column;
   grid-area: banner;
   position: relative;
   height: 310px;
@@ -79,12 +87,17 @@
 }
 
 .aboutBanner h2 {
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 52px;
+}
+
+.aboutBanner p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .aboutContent {
@@ -172,6 +185,10 @@
   .aboutBanner h2 img {
     width: 80px;
     height: 80px;
+  }
+
+  .aboutBanner p {
+    font-size: 12px;
   }
 
   .aboutContent {

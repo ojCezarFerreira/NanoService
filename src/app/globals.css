@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -26,4 +30,14 @@ a {
 
 ul {
   list-style: none;
+}
+
+#navTopSpace {
+  height: 170px;
+}
+
+@media (max-width: 1200px) {
+  #navTopSpace {
+    height: 110px;
+  }
 }
