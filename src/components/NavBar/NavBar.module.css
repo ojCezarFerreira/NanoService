@@ -77,18 +77,6 @@
   justify-content: space-between;
 }
 
-#levaETraz {
-  display: flex;
-  flex-direction: column;
-}
-
-#levaETraz img {
-  position: fixed;
-  z-index: -1;
-  margin-left: 125px;
-  top: 35px;
-}
-
 .hamburguer {
   display: none;
   border: none;
@@ -217,13 +205,9 @@
     line-height: 32px;
   }
 
-  #levaETraz {
-    flex-direction: row;
-    margin-bottom: 10px;
-  }
-
-  #levaETraz img {
-    display: none;
+  .pagesList a::after {
+    content: "→";
+    margin-left: 5px;
   }
 
   .subNav {
