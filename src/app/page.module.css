@@ -72,10 +72,6 @@
   z-index: -2;
 }
 
-.aboutUs:target {
-  margin-top: 170px;
-}
-
 .aboutBanner {
   display: flex;
   flex-direction: column;
@@ -120,7 +116,7 @@
 .aboutContent p {
   font-family: sans-serif;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -201,7 +197,7 @@
 
 
   .aboutContent p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
 

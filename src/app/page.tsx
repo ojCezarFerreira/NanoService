@@ -83,7 +83,7 @@ export default function Home() {
           <h3>Visão</h3>
           <p>
             Em um universo cada vez mais tecnológico e dinâmico, otimizamos o tempo de nossos
-            clientes que buscam diagnostico e reparo de qualidade para seus equipamentos no conforto da sua residência
+            clientes que buscam diagnostico e reparo de qualidade para seus equipamentos no conforto da sua residência ou trabalho
           </p>
         </div>
         <div className={`${styles.aboutContent} ${styles.aboutValues}`}>

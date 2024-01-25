@@ -22,7 +22,7 @@ export default function LevaETraz() {
           O “Leva e Traz” é o serviço de delivery de equipamentos da NanoService onde buscamos, diagnosticamos, reparamos e devolvemos o seu equipamento sem você sair de casa ou do trabalho.
         </p>
         <p>
-          O custo inicial será somente do translado e hora técnica do diagnostico, valor este que é retido como calção à ser abatido do valor final da possível manutenção.
+          O custo inicial será somente do translado, valor este que é retido como calção à ser abatido do valor final da possível manutenção.
         </p>
         <p>
           Para saber mais, entre em contato conosco através dos nossos canais oficias como; Telegram, WhatsApp e Instagram.
