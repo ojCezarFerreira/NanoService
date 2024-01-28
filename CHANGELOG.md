@@ -1,3 +1,8 @@
+## 1.2.2
+Adicionado imagem ao fundo da Page leva e traz.
+Página de erro 404 personalizada.
+Adicionado logo da Dell e da Acer ao carrosel de marcas.
+
 ## 1.2.1
 Adicionado pequeno text-shadow ao H1 do banner principal.
 

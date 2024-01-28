@@ -4,11 +4,13 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import { linkTelegram, linkWpp } from '@/data/links'
 
+import deliveryMan from '@/../public/images/svg/delivery-man.svg'
+
 export default function LevaETraz() {
   return <>
     <main className={styles.container}>
       <section className={styles.content}>
-        <div className={styles.background}>
+        <div>
         </div>
         <h1>Leva e Traz</h1>
         <p>
@@ -29,6 +31,15 @@ export default function LevaETraz() {
           <Link href={linkTelegram} target='_blank'>
             <Image src="/images/svg/icon-telegram.svg" alt="telegram nano service assistencia tecnica manaus" width={60} height={60} quality={100} />
           </Link>
+        </div>
+
+        <div className={styles.backgroundImage}>
+          <Image
+            src={deliveryMan}
+            alt="assitencia tecnica manaus nano service reparo de tela apple samsung iphone lenovo motorola acer dell asus"
+            width={300}
+            height={300}
+          />
         </div>
       </section>
     </main>
