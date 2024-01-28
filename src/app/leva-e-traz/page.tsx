@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import background from '../../../public/images/leva-e-traz.png'
 import Link from 'next/link'
 import { linkTelegram, linkWpp } from '@/data/links'
 
@@ -10,12 +9,6 @@ export default function LevaETraz() {
     <main className={styles.container}>
       <section className={styles.content}>
         <div className={styles.background}>
-          <Image
-            src={background}
-            alt="pessoa entregando uma caixa"
-            fill={true}
-            placeholder='blur'
-          />
         </div>
         <h1>Leva e Traz</h1>
         <p>
@@ -30,11 +23,11 @@ export default function LevaETraz() {
 
         <div className={styles.contactButtons}>
           <Link href={linkWpp} target='_blank'>
-            <Image src="/images/icon-whatsapp.png" alt="icone whatsapp" width={70} height={70} quality={100} />
+            <Image src="/images/svg/icon-whatsapp.svg" alt="whatsapp nano service assistencia tecnica manaus" width={60} height={60} quality={100} />
           </Link>
 
           <Link href={linkTelegram} target='_blank'>
-            <Image src="/images/icon-telegram.png" alt="icone telegram" width={70} height={70} quality={100} />
+            <Image src="/images/svg/icon-telegram.svg" alt="telegram nano service assistencia tecnica manaus" width={60} height={60} quality={100} />
           </Link>
         </div>
       </section>

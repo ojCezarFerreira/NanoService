@@ -26,38 +26,38 @@ export default function Footer() {
           <div className={styles.socialMedias}>
             <Link href={linkInstagram} target='_blank'>
               <Image
-                src="/images/icon-instagram.png"
+                src="/images/svg/icon-instagram.svg"
                 alt="icone instagram"
                 quality={100}
-                width={90}
-                height={90}
+                width={70}
+                height={70}
               />
             </Link>
             <Link href={linkFacebook} target='_blank'>
               <Image
-                src="/images/icon-facebook.png"
+                src="/images/svg/icon-facebook.svg"
                 alt="icone facebook"
                 quality={100}
-                width={90}
-                height={90}
+                width={70}
+                height={70}
               />
             </Link>
             <Link href={linkWpp} target='_blank'>
               <Image
-                src="/images/icon-whatsapp.png"
+                src="/images/svg/icon-whatsapp.svg"
                 alt="icone whatsapp"
                 quality={100}
-                width={90}
-                height={90}
+                width={70}
+                height={70}
               />
             </Link>
             <Link href={linkTelegram} target='_blank'>
               <Image
-                src="/images/icon-telegram.png"
+                src="/images/svg/icon-telegram.svg"
                 alt="icone telegram"
                 quality={100}
-                width={90}
-                height={90}
+                width={70}
+                height={70}
               />
             </Link>
           </div>

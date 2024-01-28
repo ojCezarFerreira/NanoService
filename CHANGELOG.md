@@ -1,3 +1,16 @@
+## 1.2.0
+Grandes mudanças visuais e semanticas foram realizadas.
+Mudaram algumas cores.
+Imagens pesadas e mal otimizadas foram removidas ou substituídas.
+Adicionado mais palvras chaves pelo código com o fim de melhorar a indexação no Google.
+Alguns arquivos já foram refatorados para usar REM como medida (Não listei, por favor revisar todos).
+Pequena refatoração na lógica do service card com o fim de suportar icones dinamicos.
+Banner principal removido e substituido por codigo semantico.
+Foto de fundo da page Leva e Traz removido por ser muito pesado.
+
+A fazer no curto prazo:
+  Tudo movido pro trello.
+
 ## 1.1.0
 Google analytcs adicionado e foram feitos alguns pequenos ajustes visuais.
 

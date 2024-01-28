@@ -6,8 +6,6 @@ import Link from 'next/link'
 import { linkTelegram, linkWpp } from '@/data/links'
 import { useState } from 'react';
 
-import foguete from '../../../public/images/foguete.png'
-
 export default function NavBar() {
   const [menuMobileIsActive, setMenuMobileIsActive] = useState(false)
 
@@ -30,12 +28,12 @@ export default function NavBar() {
           <li><span>Faça seu pré-orçamento <br />GRÁTIS aqui!</span></li>
           <li>
             <Link href={linkWpp} target='_blank'>
-              <Image src="/images/icon-whatsapp.png" alt="icone whatsapp" width={70} height={70} quality={100} />
+              <Image src="/images/svg/icon-whatsapp.svg" alt="whatsapp nano service assistencia tecnica manaus" width={70} height={70} quality={100} />
             </Link>
           </li>
           <li>
             <Link href={linkTelegram} target='_blank'>
-              <Image src="/images/icon-telegram.png" alt="icone telegram" width={70} height={70} quality={100} />
+              <Image src="/images/svg/icon-telegram.svg" alt="telegram nano service assistencia tecnica manaus" width={70} height={70} quality={100} />
             </Link>
           </li>
         </ul>
@@ -69,17 +67,17 @@ export default function NavBar() {
         </Link>
 
         <Link href={linkWpp} target='_blank' className={styles.navContactButtonMobile}>
-          <Image src="/images/icon-whatsapp.png" alt="icone whatsapp" width={40} height={40} quality={100} />
+          <Image src="/images/svg/icon-whatsapp.svg" alt="whatsapp nano service assistencia tecnica manaus" width={40} height={40} quality={100} />
         </Link>
 
         <Link href={linkTelegram} target='_blank' className={styles.navContactButtonMobile}>
-          <Image src="/images/icon-telegram.png" alt="icone telegram" width={40} height={40} quality={100} />
+          <Image src="/images/svg/icon-telegram.svg" alt="telegram nano service assistencia tecnica manaus" width={40} height={40} quality={100} />
         </Link>
 
         <button aria-label="botao-menu" className={menuMobileIsActive ? styles.hamburguerActive : styles.hamburguer} onClick={menuMobileAction}></button>
       </div>
       <div className={styles.subNav}>
-        Atendemos toda Manaus <Image src="/images/svg/deliveryTruck.svg" alt="Caminhão de delivery" width={33} height={25} />
+        Atendemos toda Manaus <Image src="/images/svg/deliveryTruck.svg" alt="Assitência Técnica Manaus Delivery" width={33} height={25} />
       </div>
     </nav>
   </>

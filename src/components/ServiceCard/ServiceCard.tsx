@@ -4,17 +4,17 @@ import styles from './ServiceCard.module.css'
 interface ServiceCardProps {
   background: StaticImageData
   title: string
-  contentIcon: StaticImageData
+  contentIcon: StaticImageData[]
   content: string[]
 }
 
 export default function ServiceCard(props: ServiceCardProps) {
   function renderListContent() {
     return props.content.map((content, i) => {
-      return <li key={i}>
+      return <li key={Math.random()}>
         <Image
-          src={props.contentIcon}
-          alt="Botao vermelho com um X no centro que indica negatividade"
+          src={props.contentIcon[i] ?? props.contentIcon[0]}
+          alt="Nano Service assitencia tecnica manaus impressora HP Epson Cafeteira celular smartphone"
           width={30}
           height={30}
           quality={100}
@@ -29,9 +29,11 @@ export default function ServiceCard(props: ServiceCardProps) {
     <div className={styles.card}>
       <Image
         src={props.background}
-        alt='Serviços tecnicos especializado manaus'
-        fill={true}
+        alt='Assitencia tecnica manaus nano service samsung xiaomi doogee apple nokia sony vaio asus motorola positivo caterpillar garmin lenovo HP epson brothers'
+        fill
+        sizes='(max-width: 1920) 310px'
         quality={100}
+        className={styles.cardBg}
       />
       <h2>{props.title}</h2>
 
@@ -40,7 +42,6 @@ export default function ServiceCard(props: ServiceCardProps) {
           {renderListContent()}
         </ul>
 
-        <span>E muito mais...</span>
       </div>
     </div>
   </>

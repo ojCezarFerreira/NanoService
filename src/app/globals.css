@@ -1,13 +1,15 @@
 :root {
-  --background-color: #7E8AA2;
+  --background-color: #3E639E;
   --main-orange: #ED9B40;
   --main-orange-70opacity: rgba(237, 155, 64, .7);
   --main-black: #1C1C1C;
   --main-black-70opacity: rgba(28, 28, 28, .7);
-  --main-red: #A40606;
-  --main-red-70opacity: rgba(164, 6, 6, .7);
+  --main-red: #DE2027;
+  --main-red-70opacity: rgba(222, 32, 39, .7);
   --main-green: #7CEA9C;
   --main-green-70opacity: rgba(124, 234, 156, .7);
+  --main-purple: #8967BC;
+  --main-purple-hover: #6e5397;
 }
 
 * {
