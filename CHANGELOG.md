@@ -1,3 +1,6 @@
+## 1.2.1
+Adicionado pequeno text-shadow ao H1 do banner principal.
+
 ## 1.2.0
 Grandes mudanças visuais e semanticas foram realizadas.
 Mudaram algumas cores.
