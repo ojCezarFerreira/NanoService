@@ -2,10 +2,9 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
 
-import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/Footer/Footer'
+import NavBar from '@/components/NavBar/NavBar'
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['700'] })
 
@@ -20,13 +19,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
-      <body className={montserrat.className}>
+    <html lang="pt-br" className={montserrat.className}>
+      <body>
         <NavBar />
         <div id="navTopSpace"></div>
         {children}
         <Footer />
-        <GoogleAnalytics gaId='G-W6LXP45501' />
       </body>
     </html>
   )

@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import iconCheck from '../../public/images/svg/icon-check.svg'
+import BannerPrincipal from '@/components/BannerPrincipal/BannerPrincipal'
+import BrandCarousel from '@/components/BrandCarousel/BrandCarousel'
 import ServiceCard from '@/components/ServiceCard/ServiceCard'
 import serviceCardDataArray from '@/data/serviceCardContent'
-import BrandCarousel from '@/components/BrandCarousel/BrandCarousel'
-import aboutUsBanner from '../../public/images/banner-quem-somos.jpg'
+import aboutUsBanner from '../../public/images/banner-quem-somos.webp'
 import nanoLogoClean from '../../public/images/nanoservice-clean-logo.png'
-import BannerPrincipal from '@/components/BannerPrincipal/BannerPrincipal'
+import iconCheck from '../../public/images/svg/icon-check.svg'
 
 export default function Home() {
   function renderServices() {
