@@ -57,7 +57,7 @@ export default function NavBar() {
       <div className={menuMobileIsActive ? styles.navListMobileWithMenuActive : styles.navListMobile}>
         <Link href='/'>
           <Image
-            src="/images/nanoservice-clean-logo.png"
+            src="/images/mobile-logo.webp"
             alt="nanoservice logo"
             width={70}
             height={80}

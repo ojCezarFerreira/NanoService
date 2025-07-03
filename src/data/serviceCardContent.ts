@@ -1,15 +1,15 @@
 import { StaticImageData } from 'next/image'
 
-import iphoneQuebrado from '../../public/images/iphone-quebrado.jpg'
-import laptop from '../../public/images/laptop.jpg'
-import cartucho from '../../public/images/cartucho.jpg'
-import blackBack from '../../public/images/black-back.jpg'
-import iconCancelar from '../../public/images/svg/icone-cancelar.svg'
+import blackBack from '../../public/images/black-back.webp'
 import brokenTv from '../../public/images/broken-tv.png'
+import cartucho from '../../public/images/cartucho.webp'
 import consoleControl from '../../public/images/console-control.png'
+import iphoneQuebrado from '../../public/images/iphone-quebrado.webp'
+import laptop from '../../public/images/laptop.webp'
 import cafeMachine from '../../public/images/máquina-de-cafe.png'
 import projetor from '../../public/images/projetor.png'
 import xboxSerieS from '../../public/images/serie-xbox-s.png'
+import iconCancelar from '../../public/images/svg/icone-cancelar.svg'
 
 
 interface serviceCardData {
