@@ -1,0 +1,9 @@
+.navTopSpace {
+    height: 170px;
+}
+
+@media (max-width: 1200px) {
+    .navTopSpace {
+        height: 110px;
+    }
+}
