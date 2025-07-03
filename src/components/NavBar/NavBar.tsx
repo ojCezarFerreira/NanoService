@@ -40,7 +40,7 @@ export default function NavBar() {
 
         <Link href='/' className={styles.logoDesk}>
           <Image
-            src="/images/nanoservice-logo.png"
+            src="/images/nanoservice-logo.webp"
             alt="nanoservice logo"
             width={142}
             height={120}
