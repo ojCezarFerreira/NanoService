@@ -1,10 +1,10 @@
 "use client";
 
-import Image from 'next/image'
-import styles from './NavBar.module.css'
-import Link from 'next/link'
-import { linkTelegram, linkWpp } from '@/data/links'
+import { linkTelegram, linkWpp } from '@/data/links';
+import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
+import styles from './NavBar.module.css';
 
 export default function NavBar() {
   const [menuMobileIsActive, setMenuMobileIsActive] = useState(false)
@@ -27,12 +27,12 @@ export default function NavBar() {
         <ul className={styles.contactList}>
           <li><span>Faça seu pré-orçamento <br />GRÁTIS aqui!</span></li>
           <li>
-            <Link href={linkWpp} target='_blank'>
+            <Link href={linkWpp}>
               <Image src="/images/svg/icon-whatsapp.svg" alt="whatsapp nano service assistencia tecnica manaus" width={70} height={70} quality={100} />
             </Link>
           </li>
           <li>
-            <Link href={linkTelegram} target='_blank'>
+            <Link href={linkTelegram}>
               <Image src="/images/svg/icon-telegram.svg" alt="telegram nano service assistencia tecnica manaus" width={70} height={70} quality={100} />
             </Link>
           </li>
@@ -66,11 +66,11 @@ export default function NavBar() {
           />
         </Link>
 
-        <Link href={linkWpp} target='_blank' className={styles.navContactButtonMobile}>
+        <Link href={linkWpp} className={styles.navContactButtonMobile}>
           <Image src="/images/svg/icon-whatsapp.svg" alt="whatsapp nano service assistencia tecnica manaus" width={40} height={40} quality={100} />
         </Link>
 
-        <Link href={linkTelegram} target='_blank' className={styles.navContactButtonMobile}>
+        <Link href={linkTelegram} className={styles.navContactButtonMobile}>
           <Image src="/images/svg/icon-telegram.svg" alt="telegram nano service assistencia tecnica manaus" width={40} height={40} quality={100} />
         </Link>
 

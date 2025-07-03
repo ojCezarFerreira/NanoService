@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import styles from './Footer.module.css'
-import Link from 'next/link'
 import { linkFacebook, linkInstagram, linkTelegram, linkWpp } from '@/data/links'
+import Image from 'next/image'
+import Link from 'next/link'
+import styles from './Footer.module.css'
 
 export default function Footer() {
   return <>
@@ -19,12 +19,12 @@ export default function Footer() {
         <section className={styles.contactSection}>
           <h2>Contato</h2>
           <div className={styles.contactMeans}>
-            WhatsApp e Telegram: (92) 92985-3348
+            WhatsApp e Telegram: (99) 99999-9999
             <br /> <br />
             E-mail: comercial@nanoservice.net.br
           </div>
           <div className={styles.socialMedias}>
-            <Link href={linkInstagram} target='_blank'>
+            <Link href={linkInstagram}>
               <Image
                 src="/images/svg/icon-instagram.svg"
                 alt="icone instagram"
@@ -33,7 +33,7 @@ export default function Footer() {
                 height={70}
               />
             </Link>
-            <Link href={linkFacebook} target='_blank'>
+            <Link href={linkFacebook}>
               <Image
                 src="/images/svg/icon-facebook.svg"
                 alt="icone facebook"
@@ -42,7 +42,7 @@ export default function Footer() {
                 height={70}
               />
             </Link>
-            <Link href={linkWpp} target='_blank'>
+            <Link href={linkWpp}>
               <Image
                 src="/images/svg/icon-whatsapp.svg"
                 alt="icone whatsapp"
@@ -67,7 +67,7 @@ export default function Footer() {
       <div className={styles.copyright}>
         © Copyright NanoTech. Todos os direitos reservados
         <br />
-        Desenvolvido por NanoTech
+        Desenvolvido por Cynk Agência Digital
       </div>
     </footer>
   </>

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import Link from 'next/link'
 import { linkTelegram, linkWpp } from '@/data/links'
+import Link from 'next/link'
 
 import deliveryMan from '@/../public/images/svg/delivery-man.svg'
 
@@ -24,11 +24,11 @@ export default function LevaETraz() {
         </p>
 
         <div className={styles.contactButtons}>
-          <Link href={linkWpp} target='_blank'>
+          <Link href={linkWpp}>
             <Image src="/images/svg/icon-whatsapp.svg" alt="whatsapp nano service assistencia tecnica manaus" width={60} height={60} quality={100} />
           </Link>
 
-          <Link href={linkTelegram} target='_blank'>
+          <Link href={linkTelegram}>
             <Image src="/images/svg/icon-telegram.svg" alt="telegram nano service assistencia tecnica manaus" width={60} height={60} quality={100} />
           </Link>
         </div>
